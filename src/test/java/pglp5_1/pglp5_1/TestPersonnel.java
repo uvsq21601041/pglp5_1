@@ -1,10 +1,11 @@
 package pglp5_1.pglp5_1;
 
-import java.util.ArrayList;
 import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.ObjectOutputStream;
-public class SerializableDemo {
+import java.util.ArrayList;
+
+public class TestPersonnel {
 
 	 public static void main(String[] args) {
 		 ArrayList<Integer> list=new ArrayList<Integer>();

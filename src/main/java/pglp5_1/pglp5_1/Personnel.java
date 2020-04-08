@@ -3,9 +3,8 @@ package pglp5_1.pglp5_1;
 import java.io.Serializable;
 import java.time.LocalDate;
 import java.util.ArrayList;
+import java.io.Serializable;
 
-import org.apache.commons.lang3.builder.ToStringBuilder;
-import org.apache.commons.lang3.builder.ToStringStyle;
 
 public class Personnel implements Serializable{
 
@@ -56,15 +55,9 @@ public class Personnel implements Serializable{
 	{
 		this.telephone=telephone;
 	}
-	
-	
-	
-	@Override
-	public String toString() {
-		return new ToStringBuilder(this, ToStringStyle.MULTI_LINE_STYLE)
-								   .append("name", name)
-								   .append("age", age)
-								   .toString();
-	}
 }
+	
+	
+	
+	
 
