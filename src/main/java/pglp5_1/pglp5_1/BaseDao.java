@@ -43,7 +43,7 @@ public class BaseDao {
 			for(int i=0;i<objs.length;i++) {
 				ps.setObject(i+1, objs[i]);
 			}
-			//执行sql
+			
 			ps.execute();
 		}catch(Exception e) {
 			e.printStackTrace();
