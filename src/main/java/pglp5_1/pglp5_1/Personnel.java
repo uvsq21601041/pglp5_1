@@ -8,13 +8,18 @@ import java.io.Serializable;
 
 public class Personnel implements Serializable{
 
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
 	private  String nom;
     private  String prenom;
     private  String fonction;
     private  LocalDate  Datenaissance;
     private  ArrayList<Integer> telephone;
+    private Integer isbn; 
 	
-	public String getNom() {
+	public  String getNom() {
 		return nom;
 	}
 	public void setNom(String nom) {
@@ -54,6 +59,12 @@ public class Personnel implements Serializable{
 	public void setTelephone(ArrayList<Integer>  telephone)
 	{
 		this.telephone=telephone;
+	}
+	public Integer getIsbn() {
+		return isbn;
+	}
+	public void setIsbn(Integer isbn) {
+		this.isbn = isbn;
 	}
 }
 	
