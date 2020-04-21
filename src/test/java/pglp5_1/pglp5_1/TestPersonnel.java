@@ -17,16 +17,6 @@ public class TestPersonnel {
 		  per.setPrenom("tutu");
 		  per.setFonction("2019-03-03");
 		  per.setTelephone(list);
-		  try
-		  {
-		   FileOutputStream fileOut = new FileOutputStream("personnel.ser");
-		   ObjectOutputStream outStream = new ObjectOutputStream(fileOut);
-		   outStream.writeObject(per);
-		   outStream.close();
-		   fileOut.close();
-		  }catch(IOException i)
-		  {
-		   i.printStackTrace();
-		  }
+		  
 		 }
 		}

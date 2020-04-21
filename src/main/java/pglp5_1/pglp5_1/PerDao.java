@@ -1,9 +1,8 @@
 package pglp5_1.pglp5_1;
 
-import java.util.List;
-import pglp5_1.pglp5_1.BaseDao;
-import pglp5_1.pglp5_1.PersonnelDao;
 
+import pglp5_1.pglp5_1.PersonnelDao;
+import java.util.List;
 import java.util.ArrayList;
 
 import java.util.Map;
@@ -11,27 +10,26 @@ import java.util.Map;
 
 
 
-public class PerDao extends BaseDao implements PersonnelDao{
+public class PerDao  implements PersonnelDao{
 
 	public void add(Personnel per) {
-		this.executeSql("insert into Personnel values(null,?,?)", per.getNom(),per.getPrenom());
-
+		
 		
 	}
 
 	public void update(Personnel per) {
-		this.executeSql("update Personnel set Nom=?,Prenom=? where isbn=?", per.getNom(),per.getPrenom(),per.getIsbn());
-
+		
 		
 	}
 
 	public void delete(int isbn) {
-		this.executeSql("delete from Personnel where isbn=?", isbn);
+		
 		
 	}
 
 	public List<Personnel> getAll() {
-		return this.convert(this.executeQuery("select isbn,nom,prenom from Personnel"));
+		return null;
+		
 		
 	}
 
